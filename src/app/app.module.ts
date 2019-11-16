@@ -20,6 +20,6 @@ import { ShareModule } from './share/share.module';
   ],
   exports: [],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

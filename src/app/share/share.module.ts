@@ -6,7 +6,7 @@ import { MessageModule } from '../features/message/message.module';
 import { NotificationModule } from '../features/notification/notification.module';
 import { UserModule } from '../features/user/user.module';
 import { MaterialModule } from './material.module';
-import { SettingsModule } from '../features/settings/settings.module';
+import { MailModule } from '../mail/mail.module';
 
 
 @NgModule({
@@ -19,7 +19,7 @@ import { SettingsModule } from '../features/settings/settings.module';
     MessageModule,
     NotificationModule,
     UserModule,
-    // SettingsModule
+    MailModule,
   ],
   exports: [
     MaterialModule,
@@ -29,7 +29,7 @@ import { SettingsModule } from '../features/settings/settings.module';
     MessageModule,
     NotificationModule,
     UserModule,
-    // SettingsModule
+    MailModule,
   ]
 })
 export class ShareModule { }
