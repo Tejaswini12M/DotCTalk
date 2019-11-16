@@ -9,13 +9,16 @@ export class AppComponent {
   title = 'DotcTalk';
 
   links = [{
-    'icon': "inbox"
+    'icon': "inbox",
+    "path": "['/mail']"
   }, {
-    'icon': "send"
+    'icon': "send",
+    "path": "['/mail']"
   }, {
-    'icon': "delete"
+    'icon': "delete",
+    "path": "['/mail']"
   }];
-
+  activeLink = this.links[0];
 
   options = [{
     'icon': "mail_outline",

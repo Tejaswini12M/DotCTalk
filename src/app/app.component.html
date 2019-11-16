@@ -10,7 +10,6 @@
 
 <div fxFill fxLayout="row" class="home-container">
   <div class="profile-nav" fxFlex="13" fxLayout="column" fxLayoutAlign="center space-around">
-
     <div fxFlex="25" fxLayoutAlign="space-around center" fxLayout="column">
       <img class="rounded-circle" src="https://www.templatebeats.com/files/images/profile_user.jpg" alt="...">
       <div fxFlex="25" fxLayoutAlign="space-around center" fxLayout="column">
@@ -32,9 +31,9 @@
     </div>
   </div>
   <div fxFlex="27">
-    <nav mat-tab-nav-bar>
-      <a class="mat-tab-link-dotc" mat-tab-link *ngFor="let link of links" [active]="activeLink == link"
-        [routerLink]="['/mail']">
+    <nav mat-tab-nav-bar class="mat-tab-bar-dotc">
+      <a class="mat-tab-link-dotc" mat-tab-link *ngFor="let link of links" (click)="activeLink = link"
+        [class.mail-active]="activeLink == link" [routerLink]="link.path">
         <mat-icon class="example-icon" aria-hidden="false" aria-label="Example heart icon">
           {{link.icon}}
         </mat-icon>
