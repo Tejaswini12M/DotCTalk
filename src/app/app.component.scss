@@ -15,6 +15,12 @@
 }
 
 
+.mat-toolbar,
+.mat-toolbar-row {
+  min-height: 50px !important;
+  height: 50px !important;
+}
+
 .example-action-button {
   margin-top: 8px;
   margin-right: 8px;
