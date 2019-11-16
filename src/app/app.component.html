@@ -41,7 +41,19 @@
     </nav>
     <router-outlet></router-outlet>
   </div>
-  <div fxFlex="60"> </div>
+  <div fxFlex="60">
+    <!-- Icon by itself -->
+    <mat-icon svgIcon="account-card-details"></mat-icon>
+    <!-- Icon button -->
+    <button mat-icon-button>
+      <mat-icon svgIcon="email"></mat-icon>
+    </button>
+    <!-- You can also combine an icon and text together -->
+    <button mat-button>
+      <mat-icon svgIcon="code-tags"></mat-icon>
+      View source
+    </button>
+  </div>
 </div>
 
 
