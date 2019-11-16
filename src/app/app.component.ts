@@ -18,7 +18,7 @@ export class AppComponent {
 
 
   options = [{
-    'icon': "inbox",
+    'icon': "mail_outline",
     'label': "Mail"
   }, {
     'icon': "chat_bubble_outline",
