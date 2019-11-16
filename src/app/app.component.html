@@ -10,12 +10,15 @@
 
 <div fxFill fxLayout="row" class="home-container">
   <div class="profile-nav" fxFlex="13" fxLayout="column" fxLayoutAlign="center space-around">
+
     <div fxFlex="25" fxLayoutAlign="space-around center" fxLayout="column">
       <img class="rounded-circle" src="https://www.templatebeats.com/files/images/profile_user.jpg" alt="...">
-      <span class="font-weight-bold">Shaik Iliyas</span>
-      <span class="font-weight-lighter">Software</span>
+      <div fxFlex="25" fxLayoutAlign="space-around center" fxLayout="column">
+        <span class="font-weight-bold app-text-lg">Shaik Iliyas</span>
+        <span class="font-weight-bold font-weight-lighter app-text-sm">Software</span>
+      </div>
     </div>
-    <mat-divider></mat-divider>
+
 
     <div fxFlex="75">
       <mat-nav-list>
@@ -39,7 +42,7 @@
     </nav>
     <router-outlet></router-outlet>
   </div>
-  <div fxFlex="60"> 60</div>
+  <div fxFlex="60"> </div>
 </div>
 
 
