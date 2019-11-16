@@ -12,28 +12,28 @@ export class AppComponent {
     'icon': "inbox",
     "path": "['/mail']"
   }, {
-    'icon': "send",
+    'icon': "email-send-outline",
     "path": "['/mail']"
   }, {
-    'icon': "delete",
+    'icon': "delete-empty-outline",
     "path": "['/mail']"
   }];
   activeLink = this.links[0];
 
   options = [{
-    'icon': "mail_outline",
+    'icon': "email-outline",
     'label': "Mail"
   }, {
-    'icon': "chat_bubble_outline",
+    'icon': "chat-outline",
     'label': "Chat"
   }, {
-    'icon': "assignment",
+    'icon': "clipboard-account-outline",
     'label': "Agendas"
   }, {
-    'icon': "note_add",
+    'icon': "pin-outline",
     'label': "Notes"
   }, {
-    'icon': "today",
+    'icon': "timetable",
     'label': "Reminders"
   }];
 
