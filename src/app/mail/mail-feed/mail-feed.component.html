@@ -1,1 +1,15 @@
-<p>mail-feed works!</p>
+<mat-list class="mail-container">
+  <mat-list-item *ngFor="let mail of mails">
+
+    <img matListAvatar src="https://www.templatebeats.com/files/images/profile_user.jpg" alt="..."
+      class="rounded-circle-sm">
+
+    <div matLine fxLayout="row" fxLayoutAlign="space-between center">
+      <span class="font-weight-bold"> {{mail.name}} </span>
+      <span class="font-weight-lighter app-font-xs"> 05:45 PM </span>
+    </div>
+
+    <span matLine class="font-weight-lighter mt2"> {{mail.subject}} </span>
+    <mat-divider></mat-divider>
+  </mat-list-item>
+</mat-list>
