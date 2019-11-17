@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { GroupModule } from '../features/group/group.module';
 import { MessageModule } from '../features/message/message.module';
 import { NotificationModule } from '../features/notification/notification.module';
@@ -20,6 +21,8 @@ import { MailModule } from '../mail/mail.module';
     NotificationModule,
     UserModule,
     MailModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   exports: [
     MaterialModule,
@@ -30,6 +33,8 @@ import { MailModule } from '../mail/mail.module';
     NotificationModule,
     UserModule,
     MailModule,
+    FormsModule,
+    ReactiveFormsModule,
   ]
 })
 export class ShareModule { }

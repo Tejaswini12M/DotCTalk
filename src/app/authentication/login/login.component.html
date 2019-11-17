@@ -1,0 +1,13 @@
+<div>
+  <form [formGroup]="loginForm">
+    <div class="example-container">
+      <mat-form-field>
+        <input formControlName="ctrlEmail" matInput name="ctrlEmail" placeholder="Email">
+      </mat-form-field>
+      <mat-form-field>
+        <input formControlName="ctrlPassword" matInput name="ctrlPassword" placeholder="Password">
+      </mat-form-field>
+      <button mat-raised-button color="primary" (click)="loginToApp()">LogIn</button>
+    </div>
+  </form>
+</div>
