@@ -31,7 +31,7 @@ export class LoginComponent implements OnInit {
       password: this.loginForm.controls['ctrlPassword'].value,
     }
     this.authenticationService.loginWithEmail(form);
-    this.router.navigate(['/mail']);
+    // this.router.navigate(['/mail']);
   }
 
 }
