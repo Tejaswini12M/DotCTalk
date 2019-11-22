@@ -13,6 +13,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { ShareModule } from './share/share.module';
 import { AuthenticationModule } from './authentication/authentication.module';
+import { MiddlewareService } from './security/middleware.service';
 
 
 @NgModule({
@@ -31,7 +32,7 @@ import { AuthenticationModule } from './authentication/authentication.module';
     AuthenticationModule,
   ],
   exports: [],
-  providers: [],
+  providers: [MiddlewareService],
   bootstrap: [AppComponent],
 })
 export class AppModule {

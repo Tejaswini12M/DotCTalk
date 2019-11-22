@@ -12,81 +12,56 @@ export class MailFeedComponent implements OnInit {
   ngOnInit() {
   }
 
-  mails = [
+  public mails=[
     {
-      "name": "Shaik Bilal",
+      "name": "John Doe",
       "subject": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quasi ad provident esse ab quae eaque qui animi voluptates non sint eveniet iusto ex, laboriosam consequuntur reprehenderit, a nam dolore.",
     },
     {
-      "name": "Shaik Munny",
+      "name": "Shen Vinni",
       "subject": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quasi ad provident esse ab quae eaque qui animi voluptates non sint eveniet iusto ex, laboriosam consequuntur reprehenderit, a nam dolore.",
     }
     , {
-      "name": "Shaik Karimulla",
+      "name": "Christopher",
       "subject": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quasi ad provident esse ab quae eaque qui animi voluptates non sint eveniet iusto ex, laboriosam consequuntur reprehenderit, a nam dolore.",
     }
-    , {
-      "name": "Shaik Ayeshaa",
-      "subject": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quasi ad provident esse ab quae eaque qui animi voluptates non sint eveniet iusto ex, laboriosam consequuntur reprehenderit, a nam dolore.",
-    }, {
-      "name": "Shaik Shamshad",
-      "subject": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quasi ad provident esse ab quae eaque qui animi voluptates non sint eveniet iusto ex, laboriosam consequuntur reprehenderit, a nam dolore.",
-    }, {
-      "name": "Shaik Bilal",
+    ,  {
+      "name": "John Doe",
       "subject": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quasi ad provident esse ab quae eaque qui animi voluptates non sint eveniet iusto ex, laboriosam consequuntur reprehenderit, a nam dolore.",
     },
     {
-      "name": "Shaik Munny",
+      "name": "Shen Vinni",
       "subject": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quasi ad provident esse ab quae eaque qui animi voluptates non sint eveniet iusto ex, laboriosam consequuntur reprehenderit, a nam dolore.",
     }
     , {
-      "name": "Shaik Karimulla",
+      "name": "Christopher",
       "subject": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quasi ad provident esse ab quae eaque qui animi voluptates non sint eveniet iusto ex, laboriosam consequuntur reprehenderit, a nam dolore.",
     }
-    , {
-      "name": "Shaik Ayeshaa",
-      "subject": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quasi ad provident esse ab quae eaque qui animi voluptates non sint eveniet iusto ex, laboriosam consequuntur reprehenderit, a nam dolore.",
-    }, {
-      "name": "Shaik Shamshad",
-      "subject": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quasi ad provident esse ab quae eaque qui animi voluptates non sint eveniet iusto ex, laboriosam consequuntur reprehenderit, a nam dolore.",
-    }, {
-      "name": "Shaik Bilal",
+    ,  {
+      "name": "John Doe",
       "subject": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quasi ad provident esse ab quae eaque qui animi voluptates non sint eveniet iusto ex, laboriosam consequuntur reprehenderit, a nam dolore.",
     },
     {
-      "name": "Shaik Munny",
+      "name": "Shen Vinni",
       "subject": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quasi ad provident esse ab quae eaque qui animi voluptates non sint eveniet iusto ex, laboriosam consequuntur reprehenderit, a nam dolore.",
     }
     , {
-      "name": "Shaik Karimulla",
+      "name": "Christopher",
       "subject": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quasi ad provident esse ab quae eaque qui animi voluptates non sint eveniet iusto ex, laboriosam consequuntur reprehenderit, a nam dolore.",
     }
-    , {
-      "name": "Shaik Ayeshaa",
-      "subject": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quasi ad provident esse ab quae eaque qui animi voluptates non sint eveniet iusto ex, laboriosam consequuntur reprehenderit, a nam dolore.",
-    }, {
-      "name": "Shaik Shamshad",
-      "subject": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quasi ad provident esse ab quae eaque qui animi voluptates non sint eveniet iusto ex, laboriosam consequuntur reprehenderit, a nam dolore.",
-    }, {
-      "name": "Shaik Bilal",
+    ,  {
+      "name": "John Doe",
       "subject": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quasi ad provident esse ab quae eaque qui animi voluptates non sint eveniet iusto ex, laboriosam consequuntur reprehenderit, a nam dolore.",
     },
     {
-      "name": "Shaik Munny",
+      "name": "Shen Vinni",
       "subject": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quasi ad provident esse ab quae eaque qui animi voluptates non sint eveniet iusto ex, laboriosam consequuntur reprehenderit, a nam dolore.",
     }
     , {
-      "name": "Shaik Karimulla",
+      "name": "Christopher",
       "subject": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quasi ad provident esse ab quae eaque qui animi voluptates non sint eveniet iusto ex, laboriosam consequuntur reprehenderit, a nam dolore.",
-    }
-    , {
-      "name": "Shaik Ayeshaa",
-      "subject": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quasi ad provident esse ab quae eaque qui animi voluptates non sint eveniet iusto ex, laboriosam consequuntur reprehenderit, a nam dolore.",
-    }, {
-      "name": "Shaik Shamshad",
-      "subject": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quasi ad provident esse ab quae eaque qui animi voluptates non sint eveniet iusto ex, laboriosam consequuntur reprehenderit, a nam dolore.",
-    }
-
+    },
   ]
+
 
 }
