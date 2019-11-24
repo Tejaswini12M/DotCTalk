@@ -22,9 +22,9 @@ export class MiddlewareService {
     this.CHILD_PATH = CHILD_PATH;
   }
   public uuid = firebase.auth().currentUser.uid;
-  public PATH = FIREBASE_DB_ROOT_KEY + "/" + this.uuid + "/" + this.CHILD_PATH;
+  public PATH = FIREBASE_DB_ROOT_KEY + '/' + this.uuid + '/' + this.CHILD_PATH;
 
-  //Firebase DB Operation--------------------------------------------------------------------------------------------------------------
+  // Firebase DB Operation--------------------------------------------------------------------------------------------------------------
 
   public getDatabaseRef(PATH) {
     const dbRef = this.firebaseDatabase.database.ref(PATH);
@@ -48,7 +48,7 @@ export class MiddlewareService {
     return await dbRef.update(payload).catch(error => error);
   }
 
-  public async deleteKey(path): Promise<any> {     //path should contain delete item id
+  public async deleteKey(path): Promise<any> {     // path should contain delete item id
     const dbRef = this.getDatabaseRef(path);
     return await dbRef.remove().catch(error => error);
   }

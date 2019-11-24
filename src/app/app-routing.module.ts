@@ -5,11 +5,12 @@ import { AppComponent } from './app.component';
 import { MailFeedComponent } from './mail/mail-feed/mail-feed.component';
 import { LoginComponent } from './authentication/login/login.component';
 import { SignUpComponent } from './authentication/sign-up/sign-up.component';
+import { HomeComponent } from './home/home.component';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: '/', pathMatch: 'full' },
-  //  { path: 'home', component: AppComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
   { path: 'signUp', component: SignUpComponent },
   { path: 'login', component: LoginComponent },
   { path: 'setting', component: SettingPageComponent },
@@ -22,4 +23,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const RoutingComponents = [AppComponent, SettingPageComponent, MailFeedComponent];
+export const RoutingComponents = [AppComponent, HomeComponent, SettingPageComponent, MailFeedComponent,];

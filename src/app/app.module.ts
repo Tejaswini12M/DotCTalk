@@ -14,12 +14,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ShareModule } from './share/share.module';
 import { AuthenticationModule } from './authentication/authentication.module';
 import { MiddlewareService } from './security/middleware.service';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     RoutingComponents,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
