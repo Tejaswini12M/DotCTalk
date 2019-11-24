@@ -7,21 +7,21 @@ import { AngularFireModule } from '@angular/fire';
 
 import { environment } from 'src/environments/environment';
 
-import { AppRoutingModule, RoutingComponents } from './app-routing.module';
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { ShareModule } from './share/share.module';
 import { AuthenticationModule } from './authentication/authentication.module';
-import { MiddlewareService } from './security/middleware.service';
-import { HomeComponent } from './home/home.component';
+import { MiddlewareService } from './authentication/security/middleware.service';
 
+import { RouterModule } from '@angular/router';
+import { routers } from './app-routing';
+import { HomeModule } from './home/home.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    RoutingComponents,
-    HomeComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,6 +32,7 @@ import { HomeComponent } from './home/home.component';
     MatIconModule,
     ShareModule,
     AuthenticationModule,
+    RouterModule.forRoot(routers)
   ],
   exports: [],
   providers: [MiddlewareService],

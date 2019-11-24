@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MailCardComponent } from './mail-card/mail-card.component';
-import { MailFeedComponent } from './mail-feed/mail-feed.component';
 import { MailPageComponent } from './mail-page/mail-page.component';
 import { MailFormComponent } from './mail-form/mail-form.component';
+import { MailFeedComponent } from './mail-feed/mail-feed.component';
 
-const Components = [MailCardComponent, MailPageComponent, MailFormComponent]
+const Components = [MailCardComponent, MailPageComponent, MailFormComponent, MailFeedComponent];
 
 @NgModule({
   declarations: [Components],
@@ -13,6 +13,6 @@ const Components = [MailCardComponent, MailPageComponent, MailFormComponent]
     CommonModule
   ],
   exports: [Components],
-  bootstrap: [MailFeedComponent],
+  bootstrap: [],
 })
 export class MailModule { }

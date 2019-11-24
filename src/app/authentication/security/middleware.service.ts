@@ -3,8 +3,8 @@ import * as firebase from 'firebase/app';
 import { AngularFireDatabase } from '@angular/fire/database';
 import { AngularFireStorage } from '@angular/fire/storage';
 
-import { iFileUpload } from '../utils/generic-model';
 import { FIREBASE_DB_ROOT_KEY } from './path.constants';
+import { iFileUpload } from 'src/app/share/utils/generic-model';
 
 @Injectable({
   providedIn: 'root'
