@@ -9,19 +9,24 @@ export class AppComponent {
 
   options = [{
     'icon': "email-outline",
-    'label': "Mail"
+    'label': "Mail",
+    'routerLink': '/mail'
   }, {
     'icon': "chat-outline",
-    'label': "Chat"
+    'label': "Chat",
+    'routerLink': '/user'
   }, {
     'icon': "clipboard-account-outline",
-    'label': "Agendas"
+    'label': "Agendas",
+    'routerLink': '/mail'
   }, {
     'icon': "pin-outline",
-    'label': "Notes"
+    'label': "Notes",
+    'routerLink': '/mail'
   }, {
     'icon': "timetable",
-    'label': "Reminders"
+    'label': "Reminders",
+    'routerLink': '/mail'
   }];
 
 }

@@ -16,8 +16,8 @@
     </div>
 
     <div fxFlex="75">
-      <mat-nav-list>
-        <a mat-list-item [routerLink]="['/mail']" *ngFor="let option of options">
+      <mat-nav-list *ngFor="let option of options">
+        <a mat-list-item [routerLink]="[option.routerLink]">
           <mat-icon [svgIcon]="option.icon" class="example-icon" aria-hidden="false">
           </mat-icon>
           {{ option.label}}
