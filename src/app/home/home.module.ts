@@ -6,6 +6,7 @@ import { UserModule } from './user/user.module';
 import { MailModule } from './mail/mail.module';
 import { HomeComponent } from './home.component';
 import { MaterialModule } from '../share/material.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 const Module = [
   GroupModule,
@@ -13,6 +14,8 @@ const Module = [
   NotificationModule,
   UserModule,
   MailModule,
+  MaterialModule,
+  FlexLayoutModule
 ];
 
 @NgModule({

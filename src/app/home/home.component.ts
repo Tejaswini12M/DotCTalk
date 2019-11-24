@@ -7,11 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
   links = [{
     'icon': "inbox",
     "path": "['/mail']"
@@ -22,24 +17,15 @@ export class HomeComponent implements OnInit {
     'icon': "delete-empty-outline",
     "path": "['/mail']"
   }];
-  activeLink = this.links[0];
 
-  options = [{
-    'icon': "email-outline",
-    'label': "Mail"
-  }, {
-    'icon': "chat-outline",
-    'label': "Chat"
-  }, {
-    'icon': "clipboard-account-outline",
-    'label': "Agendas"
-  }, {
-    'icon': "pin-outline",
-    'label': "Notes"
-  }, {
-    'icon': "timetable",
-    'label': "Reminders"
-  }];
+
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+  activeLink = this.links[0];
 
   public showInfo(item) {
     console.log(item);

@@ -17,7 +17,6 @@ import { MiddlewareService } from './authentication/security/middleware.service'
 
 import { RouterModule } from '@angular/router';
 import { routers } from './app-routing';
-import { HomeModule } from './home/home.module';
 
 @NgModule({
   declarations: [
