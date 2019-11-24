@@ -33,7 +33,6 @@ import { routers } from './app-routing';
     AuthenticationModule,
     RouterModule.forRoot(routers)
   ],
-  exports: [],
   providers: [MiddlewareService],
   bootstrap: [AppComponent],
 })

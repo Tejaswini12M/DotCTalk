@@ -7,6 +7,8 @@ import { MailModule } from './mail/mail.module';
 import { HomeComponent } from './home.component';
 import { MaterialModule } from '../share/material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { RouterModule } from '@angular/router';
+import { routers } from '../app-routing';
 
 const Module = [
   GroupModule,
@@ -15,7 +17,8 @@ const Module = [
   UserModule,
   MailModule,
   MaterialModule,
-  FlexLayoutModule
+  FlexLayoutModule,
+
 ];
 
 @NgModule({
@@ -24,6 +27,7 @@ const Module = [
   ],
   imports: [
     Module,
+    RouterModule.forRoot(routers)
   ],
   exports: [
     Module,
