@@ -1,4 +1,4 @@
-export interface iFileUpload {
+export interface IFileUpload {
   id: string;
   content: File;
 }

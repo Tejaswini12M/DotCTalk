@@ -4,25 +4,26 @@ import { AngularFireDatabase } from '@angular/fire/database';
 import { AngularFireStorage } from '@angular/fire/storage';
 
 import { FIREBASE_DB_ROOT_KEY } from './path.constants';
-import { iFileUpload } from 'src/app/share/utils/generic-model';
+import { IFileUpload } from 'src/app/share/utils/generic-model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MiddlewareService {
 
-  constructor(
-    private firebaseDatabase: AngularFireDatabase,
-    private firebaseStorage: AngularFireStorage
-  ) { }
-
   public CHILD_PATH: string;
+
+  public uuid = firebase.auth().currentUser.uid;
+  public PATH = FIREBASE_DB_ROOT_KEY + '/' + this.uuid + '/' + this.CHILD_PATH;
 
   public setChildPath(CHILD_PATH) {
     this.CHILD_PATH = CHILD_PATH;
   }
-  public uuid = firebase.auth().currentUser.uid;
-  public PATH = FIREBASE_DB_ROOT_KEY + '/' + this.uuid + '/' + this.CHILD_PATH;
+
+  constructor(
+    private firebaseDatabase: AngularFireDatabase,
+    private firebaseStorage: AngularFireStorage
+  ) { }
 
   // Firebase DB Operation--------------------------------------------------------------------------------------------------------------
 
@@ -53,9 +54,9 @@ export class MiddlewareService {
     return await dbRef.remove().catch(error => error);
   }
 
-  //Storage Files Operations----------------------------------------------------------------------------
+  // Storage Files Operations----------------------------------------------------------------------------
 
-  public async uploadFile(path, file: iFileUpload): Promise<any> {
+  public async uploadFile(path, file: IFileUpload): Promise<any> {
     // const refPath = this.getDatabaseRef(path);
     const fileDbRef = this.firebaseStorage.storage.ref(path).child(file.id);
     return await fileDbRef.put(file.content).catch(error => error);
